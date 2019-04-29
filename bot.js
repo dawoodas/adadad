@@ -125,4 +125,11 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 });
 
 
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+          client.user.setActivity("#Riyderz clan",{type: '#Riyderz'});
+  
+  });
+
 client.login(process.env.TOKEN);
